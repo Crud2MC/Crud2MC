@@ -13,6 +13,9 @@
     <h1>Baja de Productos</h1>
     <div class="img"><img src="img/logo_codo.png" alt="codoacodo" width="100px"></div>
     <h3>Codo a Codo 2023</h3>
+    <div class="contenedor-centrado">
+        <a href="index.html">Menu principal</a>
+    </div>
     <table>
         <thead>
             <tr>
@@ -29,11 +32,11 @@
                 <td>{{ producto.descripcion }}</td>
                 <td>{{ producto.cantidad }}</td>
                 <td align="right">{{ producto.precio }}</td>
-                <td><button @click="eliminarProducto(producto.codigo)">Eliminar</button></td>
+                <td><button @click="eliminarProducto(producto.codigo)"><img src="./img/brr.png" alt=""></button></td>
             </tr>
         </tbody>
     </table>
-
+<br>
     <div class="contenedor-centrado">
         <a href="index.html">Menu principal</a>
     </div>
@@ -41,7 +44,7 @@
     <script src="https://unpkg.com/vue@next"></script>
     <script>
         //const URL = "http://127.0.0.1:5000/"
-        const URL = "https://crud2mc.pythonanywhere.com/"
+	const URL = "https://cesaraponte.pythonanywhere.com/"
 
         const app = Vue.createApp({
             data() {

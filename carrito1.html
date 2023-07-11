@@ -14,6 +14,9 @@
     <h1>Carrito de compras</h1>
     <div class="img"><img src="img/logo_codo.png" alt="codoacodo" width="100px"></div>
     <h3>Codo a Codo 2023</h3>
+    <div class="contenedor-centrado">
+      <a href="index.html">Menu principal</a>
+    </div>
     <table>
       <thead>
         <tr>
@@ -31,8 +34,8 @@
           <td align="right">{{ producto.cantidad }}</td>
           <td align="right">&nbsp; &nbsp; {{ producto.precio }}</td>
           <td>
-            <button @click="agregarAlCarrito(producto)">&nbsp;&nbsp;<b>+</b>&nbsp;&nbsp;</button>
-            <button @click="restarDelCarrito(producto)">&nbsp;&nbsp;<b>-</b>&nbsp;&nbsp;</button>
+            <button class="butt" @click="agregarAlCarrito(producto)">&nbsp;&nbsp;<b> <img src="./img/sum.png" alt=""> </b>&nbsp;&nbsp;</button>
+            <button class="butt" @click="restarDelCarrito(producto)">&nbsp;&nbsp;<b><img src="./img/elim.png" alt=""></b>&nbsp;&nbsp;</button>
           </td>
         </tr>
       </tbody>
@@ -47,16 +50,31 @@
             <th>Descripción</th>
             <th>Cantidad</th>
             <th>P. Unitario</th>
-            <th>Total</th>
+            <th>Sub Total</th>
+            <th>Acumulado</th>
           </tr>
         </thead>
         <tbody>
+          {{ tt=0 }}
           <tr v-for="item in carrito" :key="item.codigo">
             <td>{{ item.codigo }}</td>
             <td>{{ item.descripcion }}</td>
             <td align="right">{{ item.cantidad }}</td>
             <td align="right">&nbsp; &nbsp; {{ item.precio }}</td>
             <td align="right">&nbsp; &nbsp; {{ item.precio*item.cantidad }}</td>
+            <td align="right">&nbsp; &nbsp; {{ tt=tt+(item.precio*item.cantidad) }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Total a Pagar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="right">&nbsp; &nbsp; {{ tt }}</td>
           </tr>
         </tbody>
       </table>
@@ -73,7 +91,8 @@
 
   <script>
     //const URL = "http://127.0.0.1:5000/"
-        const URL = "https://crud2mc.pythonanywhere.com/"
+        const URL = "https://cesaraponte.pythonanywhere.com/"
+
     const app = Vue.createApp({
       data() {
         return {

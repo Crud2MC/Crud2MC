@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar producto</title>
+    <title>Agregar curso</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <h1>Agregar Productos al Inventario</h1>
+    <div class="header">
+        <div class="logo">
+          <a href="../index.html"><img src="img/logo.png" class="logi" alt="Logo"></a>
+        </div>
+        <h1>Agregar curso</h1>
+    </div>    
     <div class="img"><img src="img/logo_codo.png" alt="codoacodo" width="100px"></div>
     <h3>Codo a Codo 2023</h3>
     <form id="formulario">
@@ -32,7 +37,7 @@
 
     <script>
         //const URL = "http://127.0.0.1:5000/"
-        const URL = "https://crud2mc.pythonanywhere.com/"
+        const URL = "https://cesaraponte.pythonanywhere.com/"
         // Capturamos el evento de envío del formulario
         document.getElementById('formulario').addEventListener('submit', function (event) {
             event.preventDefault(); // Evitamos que se envie el form por ahora

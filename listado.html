@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de Productos</title>
+    <title>Listado de Cursosos</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <h1>Listado de Productos</h1>
+    <h1>Listado de Cursos</h1>
     <div class="img"><img src="img/logo_codo.png" alt="codoacodo" width="100px"></div>
     <h3>Codo a Codo 2023</h3>
+    <div class="contenedor-centrado">
+        <a href="index.html">Menu principal</a>
+    </div>
     <table>
         <thead>
             <tr>
@@ -27,13 +30,10 @@
         </tbody>
     </table>
 
-    <div class="contenedor-centrado">
-        <a href="index.html">Menu principal</a>
-    </div>
 
     <script>
         //const URL = "http://127.0.0.1:5000/"
-        const URL = "https://crud2mc.pythonanywhere.com/"
+        const URL = "https://cesaraponte.pythonanywhere.com/"
 
         // Realizamos la solicitud GET al servidor para obtener todos los productos
         fetch(URL + 'productos')
