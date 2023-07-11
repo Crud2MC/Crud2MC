@@ -3,16 +3,21 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
-
+.subtit {
+    color: #fdab13;
+    font-size: 30px;
+    background-color:#F1EFEF;
+    border-radius: 5px;
+    margin-bottom: 80px;   
+    width: 110px; 
+}
 .contenedor-centrado {
     display:flex;
     width: 100%;
     justify-content: center;
 }
-.eslo {
-    display: flex;
-    justify-content: center;
-    color: #cccccc;
+.navbar {
+    margin-top: 2px;    
   }
 
 .contenedor-total {
@@ -21,6 +26,27 @@ body {
     justify-content: center;
     background-color: cadetblue;
 }
+.log {
+    margin: 0px;
+    float: left;
+    width: auto ;
+    border-radius: 10%;
+  }
+  
+.logi {
+    height: 90px;
+    width: 120px;
+    border-radius: 15%;
+    }
+  .eslogan {
+    display: flex;
+    justify-content: center;
+  }
+  .es {
+    display: flex;
+    justify-content: center;
+    color: #cccccc;
+  }
 
 p {
     font-family: 'Times New Roman', Times, serif;
@@ -37,8 +63,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .img {
     display:flex;
-    width: 20%;
-    justify-content: lef;
+    width: 100%;
+    justify-content: center;
 }
 
 form {
@@ -99,6 +125,14 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+.butt {
+    padding: 1px;
+    margin:1px;
+    background-color:#ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 a {

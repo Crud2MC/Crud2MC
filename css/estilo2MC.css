@@ -1,0 +1,178 @@
+body {
+  background-color: #F1EFEF;
+}
+.header {
+  overflow: hidden;
+  padding: 10px 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  color: #007bff;
+}
+
+table {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid lightslategray;
+  border-radius: 5px;
+}
+
+.header a {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 5px;
+  border-radius: 4px;
+  margin-top: 10px;  
+}
+
+.navbar {
+  float: right;
+  margin-right: 70px;
+  margin-top: 55px;
+}
+.eslogan {
+  float: left;
+  margin-left: 15px;
+  color: #f9f8f7;
+  font-weight: 800;/*negrilla, a mayor numero, mas oscuro*/
+  font-size:25px;
+}
+.formatotext {
+  color: #3d3c3c;
+  font-size:20px;
+}
+.logo {
+  margin: 0px;
+  float: left;
+  width: 20% ;
+  border-radius: 10%;
+}
+
+/* Cambia fondo al pasar cursor */
+.header a:hover {
+  background-color: #007bff;
+  color:    #ddd;
+}
+
+/* link activo*/
+.header a.active {
+  background-color: #007bff;
+  color: white;
+}
+.header-right {
+  float: right;  
+}
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button {
+    padding: 8px;
+    margin:4px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    padding: 8px;
+    margin:4px;
+    background-color: #fdab13;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 85%;
+}
+
+a:hover {
+    background-color: #cd7b00;
+}
+
+
+/* Media queries pantalla maximo 500px */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    margin-top: 3px;
+    margin-left: 180px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .header-right {
+    float: none;
+  }
+  .navbar {
+    margin-top: 2px;    
+    margin: auto;
+  }
+  
+  /* Se creea esta clase para minimizar el logo y adaptarlo a la pantalla */
+  .logi {
+    height: 70px;
+    width: 80px;
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+    }
+  .eslogan {
+    color: #fdab13;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header a {
+    float: none;
+    display: block;
+    margin-top: 3px;
+    margin-left: 180px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .header-right {
+    float: none;
+  }
+  .logi {
+    height: 70px;
+    width: 80px;
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+  }
+  .eslogan {
+    display: flex;
+    justify-content: center;
+  }
+}
